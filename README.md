@@ -60,7 +60,7 @@ The game will have the following scripts:
 ## Implementation Timeline
 
 #### Day 1: Setup and configure app, Tiles, and Board
-* Create the all the necessary files, including `webpack.js.config`, the script files, and `index.html`
+* Create the all the necessary files, including `webpack.config.js`, the script files, and `index.html`
 * Create the Tile class, including random generation of letters based on frequency in words
   * Generate letters for each tile
 * Create the Board class and determine how to move the tiles across the screen
