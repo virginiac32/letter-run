@@ -1,8 +1,13 @@
-.word-form {
 
+#score:after {
+  content: attr(data-score);
+  font-weight: bold;
+  color: black;
 }
 
-.string {
-  // font-size: 30px;
-
+#score {
+  text-align: center;
+  margin: auto;
+  font-size: 35px;
+  color: black;
 }
