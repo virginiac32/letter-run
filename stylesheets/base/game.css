@@ -1,3 +1,19 @@
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    font-size: 40px;
+}
+
+input[type=submit] {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 30px;
+}
 
 #score:after {
   content: attr(data-score);
