@@ -1,0 +1,27 @@
+{
+  "name": "word-game",
+  "version": "1.0.0",
+  "description": "Word Game is a one-player anagram word game that is inspired by scrabble and other online anagram games.",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virginiac32/word-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/virginiac32/word-game/issues"
+  },
+  "homepage": "https://github.com/virginiac32/word-game#readme"
+}
