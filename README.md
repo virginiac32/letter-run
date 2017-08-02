@@ -19,8 +19,6 @@ The game will have the following functionality:
 
 * Used letters disappear when a word is validated
 
-* Levels that progress in difficulty
-
 * A score tracker of the number of points the player has earned, which increases as the player submits words
 
 * Display of the player's entered text, which updates real time
