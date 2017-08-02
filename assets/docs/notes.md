@@ -1,7 +1,7 @@
 # Implementation Notes
 
 ## Issues
-* Issue with letters rendering on tiles
+* Make sure the tiles frequencies are correct
 
 ## Architecture and Technologies
 

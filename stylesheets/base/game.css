@@ -1,15 +1,33 @@
+body {
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Lilita One', cursive;
+}
+
+form {
+  padding-top: 20px;
+}
+
+input {
+  font-family: 'Lilita One', cursive;
+}
+
 input[type=text] {
     border: none;
     border-bottom: 2px solid gray;
     outline: none;
     font-size: 40px;
+    text-align: center;
+    width: 40vw;
 }
 
 input[type=submit] {
     background-color: green;
     border: none;
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
     text-decoration: none;
     cursor: pointer;
     font-size: 30px;
@@ -33,4 +51,12 @@ input[type=submit] {
 .header-info {
   width: 100px;
   height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  height: 80px;
 }

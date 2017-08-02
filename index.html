@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Word Game</title>
+      <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="./stylesheets/base/tiles.css">
       <link rel="stylesheet" type="text/css" href="./stylesheets/base/game.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -10,12 +11,13 @@
 
   <body>
     <div class="header-info">
-      <div id="score" data-score="0">Score: </div>
+      <img class="logo" src="./assets/docs/LetterRunLogo.png" alt="Logo" />
+      <div id="score" data-score="0">SCORE: </div>
     </div>
     <figure class="word-game"></figure>
     <form id="word-form" class="word-form">
         <input type="text" class="string" style="text-transform:uppercase"/>
-        <input type="submit"></input>
+        <input type="submit" value="SUBMIT"></input>
     </form>
 
   </body>
