@@ -2,6 +2,31 @@
   content: "";
 }
 
-.tile {
+.tile:after {
+  content: attr(data-letter);
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
   content: "";
+  clear: both;
+  display: block;
+}
+
+ul {
+  margin: 30px auto;
+  width: 95vw;
+  border: 1px solid white;
+}
+
+li {
+  float: left;
+  width: 9vw;
+  height: 9vw;
+  border: 1px solid white;
+  background: gray;
+  cursor: pointer;
 }

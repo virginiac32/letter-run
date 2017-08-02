@@ -1,5 +1,8 @@
 # Implementation Notes
 
+## Issues
+* Issue with letters rendering on tiles
+
 ## Architecture and Technologies
 
 The game will be implemented using the following technologies:
