@@ -43,7 +43,14 @@ input[type=submit], #replay {
     font-size: 30px;
     border-radius: 8px;
     font-family: 'Fredoka One', cursive;
+}
 
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
 
 #score:after {
