@@ -33,7 +33,7 @@ i:hover {
   transform: scale(1.1);
 }
 
-input[type=submit] {
+input[type=submit], #replay {
     background-color: #2486B2;
     border: none;
     color: white;
@@ -42,6 +42,8 @@ input[type=submit] {
     cursor: pointer;
     font-size: 30px;
     border-radius: 8px;
+    font-family: 'Fredoka One', cursive;
+
 }
 
 #score:after {
@@ -91,6 +93,5 @@ a {
   margin: auto;
   text-align: center;
   text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
-  color: #B21B31;
-
+  color: #2486B2;
 }
