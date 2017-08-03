@@ -84,3 +84,13 @@ input[type=submit] {
 a {
   padding: 10px;
 }
+
+#game-over {
+  position: absolute;
+  font-size: 90px;
+  margin: auto;
+  text-align: center;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  color: #B21B31;
+
+}

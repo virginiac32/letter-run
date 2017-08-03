@@ -3,12 +3,14 @@
 ## Issues
 * Make sure the tiles frequencies are correct
 * Resizing screen makes it stack wrong
+* Tiles aren't being cleared from the left first
+* Should the input clear when word is wrong/letters aren't there?
 
 ## Architecture and Technologies
 
 The game will be implemented using the following technologies:
 
-* Vanilla Javascript and jquery for the overall structure and game logic
+* Vanilla Javascript for the overall structure and game logic and jquery for DOM manipulation
 * Webpack to bundle the various scripts
 
 The game will have the following scripts:
