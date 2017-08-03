@@ -23,11 +23,8 @@ The game will have the following functionality:
 
 * Display of the player's entered text, which updates real time
 
-* A timer that counts down and ends the level at 0.
-
 In addition to the above, the project will also include:
 
-* A gameplay introduction/tutorial
 * A production Readme
 
 
