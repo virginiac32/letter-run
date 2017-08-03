@@ -3,7 +3,8 @@ body {
   /*justify-content: center;*/
   align-items: center;
   flex-direction: column;
-  font-family: 'Lilita One', cursive;
+  /*font-family: 'Lilita One', cursive;*/
+  font-family: 'Fredoka One', cursive;
 }
 
 form {
@@ -11,7 +12,8 @@ form {
 }
 
 input {
-  font-family: 'Lilita One', cursive;
+  /*font-family: 'Lilita One', cursive;*/
+  font-family: 'Fredoka One', cursive;
 }
 
 input[type=text] {
@@ -20,17 +22,26 @@ input[type=text] {
     outline: none;
     font-size: 40px;
     text-align: center;
-    width: 40vw;
+    width: 30vw;
+}
+
+i {
+  color: #2486B2
+}
+
+i:hover {
+  transform: scale(1.1);
 }
 
 input[type=submit] {
-    background-color: green;
+    background-color: #2486B2;
     border: none;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
     cursor: pointer;
     font-size: 30px;
+    border-radius: 8px;
 }
 
 #score:after {
@@ -44,8 +55,9 @@ input[type=submit] {
   margin: auto;
   font-size: 35px;
   color: black;
-  width: 100px;
-  height: 100px;
+  /*width: 100px;
+  height: 100px;*/
+  flex: 5;
 }
 
 .header-info {
@@ -59,4 +71,16 @@ input[type=submit] {
 
 .logo {
   height: 80px;
+  flex: 1;
+}
+
+.links {
+  flex: 1;
+  display: flex;
+  /*align-items: center;*/
+  justify-content: flex-end;
+}
+
+a {
+  padding: 10px;
 }

@@ -2,6 +2,7 @@
 
 ## Issues
 * Make sure the tiles frequencies are correct
+* Resizing screen makes it stack wrong
 
 ## Architecture and Technologies
 

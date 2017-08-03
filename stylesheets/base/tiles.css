@@ -24,22 +24,28 @@ ul {
 }
 
 ul {
-  margin: 30px auto;
-  width: 95vw;
-  border: 1px solid white;
+  /*margin: 30px auto;*/
+  width: 740px;
+  /*border: 1px solid white;*/
 }
 
 li {
   float: left;
-  width: 9vw;
-  height: 9vw;
+  width: 70px;
+  height: 70px;
   border: 2px solid white;
   background: white;
   cursor: pointer;
 }
 
 .tile {
-  border-radius: 15px;
-  border: 2px solid gray;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: #FF8EA3;
+  color: white;
 
+}
+
+.word-game {
+  /*background-color: #FEFFEC;*/
 }
