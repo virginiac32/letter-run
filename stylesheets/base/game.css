@@ -7,6 +7,15 @@ body {
   font-family: 'Fredoka One', cursive;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 25px;
+  color: black;
+}
+
 form {
   padding-top: 20px;
 }
@@ -33,7 +42,7 @@ i:hover {
   transform: scale(1.1);
 }
 
-input[type=submit], #replay {
+input[type=submit], button {
     background-color: #2486B2;
     border: none;
     color: white;
@@ -110,4 +119,16 @@ a {
   background-color: #9AD92F;
   bottom: -10px;
   right: 0;
+}
+
+#intro {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  font-size: 90px;
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  color: #2486B2;
 }
