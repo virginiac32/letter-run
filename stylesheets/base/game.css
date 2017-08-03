@@ -102,3 +102,12 @@ a {
   text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
   color: #2486B2;
 }
+
+#ledge {
+  position: absolute;
+  width: 740px;
+  height: 10px;
+  background-color: #9AD92F;
+  bottom: -10px;
+  right: 0;
+}
