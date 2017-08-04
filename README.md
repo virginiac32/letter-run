@@ -1,4 +1,7 @@
 # Letter Run
+
+[Live link](virginiac32.github.io/letter-run)
+
 ## Background
 
 Letter Run is a one-player anagram word game that is inspired by scrabble and other online word games.
