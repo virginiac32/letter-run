@@ -89,6 +89,7 @@ button:hover {
 
 .logo {
   height: 80px;
+  width: auto;
   flex: 1;
 }
 
