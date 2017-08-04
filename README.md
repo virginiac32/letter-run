@@ -1,19 +1,19 @@
-# Word Game - working title
+# Letter Run
 ## Background
 
-Word Game is a one-player anagram word game that is inspired by scrabble and other online anagram games.
+Letter Run is a one-player anagram word game that is inspired by scrabble and other online word games.
 
 ### Gameplay
 
-Word Game begins with a collection of letter tiles on the screen which are moving left off of the screen, with new letters moving in from the right. The player types out a word (with a minimum of 3 characters) that can be formed from the letters on the screen. The word must be entered before any of its letters leave the screen.
+Letter Run begins with a collection of letter tiles on the screen which are moving towards the left of the screen, with new letters moving in from the right. The player types out a word (with a minimum of 3 characters) that can be formed from the letters on the screen.
 
-If the word is valid, those letters fall out of the list and the player gains points, with longer words being worth more points. The player needs to reach X number of points per level before time is up in order to proceed to the next level.
+If the word is valid, those letters disappear from the screen and the player gains points, with longer words being worth more points. The game is over when a letter tile hits the red line on the left of the screen.
 
 ## Functionality and MVP
 
 The game will have the following functionality:
 
-* Randomly generated letters that travel across the screen and disappear when they reach the left edge
+* Randomly generated letters that travel across the screen, with new letters generated on the right side of the screen
 
 * Validation of the entered word (ensure the letters exist in the string and that the word is in the dictionary)
 
@@ -26,6 +26,7 @@ The game will have the following functionality:
 In addition to the above, the project will also include:
 
 * A production Readme
+* An instructional screen at the beginning
 
 
 ## Wireframes
@@ -41,15 +42,15 @@ Game wireframe:
 The game will be implemented using the following technologies:
 
 * Vanilla JavaScript for the overall structure and game logic
+* jquery for DOM manipulation
 * Webpack to bundle the various scripts
 
 The game will have the following scripts:
 
 * Tile - this script will handle each letter tile and the random selection of the letter on each tile
 * Board - this script will handle the grid on which the tiles will be displayed, plus the moving of tiles towards the left of the screen
-* Word - the word/letters entered by the player. This will be a form that checks the entered word against a dictionary upon submit
-* Game - this script will handle the overall game logic, rendering the game, checking when the game is over, and the levels
-
+* Game - this script will handle the overall game logic and checking when the game is over
+* Game View - this script will handle all the rendering of the game on the screen and user interaction with the game
 
 
 ## Implementation Timeline
@@ -62,15 +63,15 @@ The game will have the following scripts:
   * The Board can be rendered as an HTML table, with each tile as a cell. Because the tiles move across the screen, the board should re-render with the new tile positions each X milliseconds.
   * Render the board with randomly generated tiles that move across the screen
 
-#### Day 2: Word
-* Create the Word class, be able to update the inputted letters real-time
+#### Day 2: Game class
+* Create a Game class that holds all the logic for how the game is played
 * Figure out how to use a dictionary to validate words
   * Upon submission of the word, validate that word against a dictionary
 
-#### Day 3: Game & remaining functionality
-* Create the Game class and write the logic for the overall game, including levels
-* Create the Timer and Scoreboard
-  * Timer counts down to 0 and ends the level
+#### Day 3: Game View Class & remaining functionality
+* Create the Game View class and write the all the code for how the game is rendered on the screen and user interactions
+* The speed of the moving tiles increases as the points increase
+* Create the Scoreboard
   * The scorecard updates when the player submits words
 
 #### Day 4: Intro modal, styling/CSS
@@ -81,6 +82,7 @@ The game will have the following scripts:
 
 ## Bonus Features
 In the future, the game can be expanded to also include the following features:
+* A leaderboard for high scores
 * Multiplayer mode to compete against other people
 
 # Scoring
@@ -97,8 +99,6 @@ In the future, the game can be expanded to also include the following features:
 | 10+ | 70 |
 
 # Credits
-
-How to import dictionary: https://johnresig.com/blog/dictionary-lookups-in-javascript/
 
 Tones from RCP Tones (dev_tones) ([CC BY 3.0 US](https://creativecommons.org/licenses/by/3.0/us/)): http://rcptones.com/dev_tones/#tabr1
 
