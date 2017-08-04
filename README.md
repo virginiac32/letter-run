@@ -52,6 +52,7 @@ The English Open Word List (EOWL) is used as the word list. A text file of the l
 
 ## Future Features
 In the future, the game can be expanded to include the following features:
+* Smooth, gradual stepping of the tiles to the left
 * A leaderboard for high scores
 * Multiplayer mode to compete against other people
 
