@@ -132,3 +132,13 @@ a {
   background-color: white;
   color: #2486B2;
 }
+
+#replay {
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  left: 130px;
+  bottom: 20px;
+  width: 300px;
+  height: 70px;
+}
