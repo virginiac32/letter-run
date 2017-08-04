@@ -1,90 +1,57 @@
 # Letter Run
 
-[Live link](https://virginiac32.github.io/letter-run)
+[Play Letter Run!](https://virginiac32.github.io/letter-run)
 
 ## Background
 
-Letter Run is a one-player anagram word game that is inspired by scrabble and other online word games.
+Letter Run is a one-player anagram word game that is inspired by scrabble and other online word games, created by Virginia Chen.
 
 ### Gameplay
 
-Letter Run begins with a collection of letter tiles on the screen which are moving towards the left of the screen, with new letters moving in from the right. The player types out a word (with a minimum of 3 characters) that can be formed from the letters on the screen.
+![gameplay](./assets/docs/Letter-Run.gif)
 
-If the word is valid, those letters disappear from the screen and the player gains points, with longer words being worth more points. The game is over when a letter tile hits the red line on the left of the screen.
+Letter Run starts with a group of letter tiles moving towards the left of the screen. As letters move left, new letters move in from the right. Type out words (with a minimum of 3 characters) that can be formed from the letters on the screen to clear those letters!
 
-## Functionality and MVP
+If the word is valid, those letters disappear from the screen and you gain points, with longer words being worth more points. The tiles speed up as the player's score increases. The game is over when a letter tile hits the red line on the left of the screen.
 
-The game will have the following functionality:
+## Technologies
 
-* Randomly generated letters that travel across the screen, with new letters generated on the right side of the screen
+Letter Run was built using:
+* JavaScript for the overall structure and game logic
+* `jQuery` for DOM manipulation
+* `webpack` to bundle the various scripts
 
-* Validation of the entered word (ensure the letters exist in the string and that the word is in the dictionary)
+Tiles are a series of `<li>` elements in a larger `<ul>` element. The `<ul>` element is cleared and re-rendered each step.
 
-* Used letters disappear when a word is validated
+```javascript
+render() {
+  let $ul2 = document.getElementById("all-tiles");
+  $ul2.remove();
 
-* A score tracker of the number of points the player has earned, which increases as the player submits words
+  const $ul = $("<ul>");
+  $ul.attr('id','all-tiles');
+  for (let rowIdx = 0; rowIdx < 3; rowIdx++) {
+    for (let colIdx = 0; colIdx < 10; colIdx++) {
+      let $li = $("<li>");
+      $li.data("pos", [rowIdx, colIdx]);
+      if (this.game.board.grid[rowIdx][colIdx]) {
+        $li.attr('data-letter', this.game.board.grid[rowIdx][colIdx].letter);
+        $li.addClass("tile");
+      }
 
-* Display of the player's entered text, which updates real time
+      $ul.append($li);
+    }
+  }
 
-In addition to the above, the project will also include:
+  $(this.$el).append($ul);
+}
+```
 
-* A production Readme
-* An instructional screen at the beginning
-
-
-## Wireframes
-
-Intro modal:
-![intro-page](./assets/docs/wireframes/Word-Game-intro.png)
-
-Game wireframe:
-![word-drop](./assets/docs/wireframes/Word-Game.png)
-
-## Architecture and Technologies
-
-The game will be implemented using the following technologies:
-
-* Vanilla JavaScript for the overall structure and game logic
-* jquery for DOM manipulation
-* Webpack to bundle the various scripts
-
-The game will have the following scripts:
-
-* Tile - this script will handle each letter tile and the random selection of the letter on each tile
-* Board - this script will handle the grid on which the tiles will be displayed, plus the moving of tiles towards the left of the screen
-* Game - this script will handle the overall game logic and checking when the game is over
-* Game View - this script will handle all the rendering of the game on the screen and user interaction with the game
+The English Open Word List (EOWL) is used as the word list. A text file of the list is being hosted on Amazon Web Services, and the words are pulled into an array at the start of each game.
 
 
-## Implementation Timeline
-
-#### Day 1: Setup and configure app, Tiles, and Board
-* Create the all the necessary files, including `webpack.config.js`, the script files, and `index.html`
-* Create the Tile class, including random generation of letters based on frequency in words
-  * Generate letters for each tile
-* Create the Board class and determine how to move the tiles across the screen
-  * The Board can be rendered as an HTML table, with each tile as a cell. Because the tiles move across the screen, the board should re-render with the new tile positions each X milliseconds.
-  * Render the board with randomly generated tiles that move across the screen
-
-#### Day 2: Game class
-* Create a Game class that holds all the logic for how the game is played
-* Figure out how to use a dictionary to validate words
-  * Upon submission of the word, validate that word against a dictionary
-
-#### Day 3: Game View Class & remaining functionality
-* Create the Game View class and write the all the code for how the game is rendered on the screen and user interactions
-* The speed of the moving tiles increases as the points increase
-* Create the Scoreboard
-  * The scorecard updates when the player submits words
-
-#### Day 4: Intro modal, styling/CSS
-* Create the introduction modal with instructions on how to play the game
-* Pull together the look and UX of the app
-  * Add CSS effects (transitions when tiles disappear, effects when the word is correct/incorrect, etc.)
-  * Add sounds effects if necessary
-
-## Bonus Features
-In the future, the game can be expanded to also include the following features:
+## Future Features
+In the future, the game can be expanded to include the following features:
 * A leaderboard for high scores
 * Multiplayer mode to compete against other people
 
@@ -103,10 +70,10 @@ In the future, the game can be expanded to also include the following features:
 
 # Credits
 
-Tones from RCP Tones (dev_tones) ([CC BY 3.0 US](https://creativecommons.org/licenses/by/3.0/us/)): http://rcptones.com/dev_tones/#tabr1
-
 The English Open Word List (EOWL) was used to validate words in this game: http://dreamsteep.com/downloads/word-games-and-wordsmith-utilities/120-the-english-open-word-list-eowl.html
 
 The Cornell University Math Explorer's Project's English letter frequency table was used to calculate the generated letters: [frequency-table](http://www.math.cornell.edu/~mec/2003-2004/cryptography/subs/frequencies.html)
+
+Tones from RCP Tones (dev_tones) ([CC BY 3.0 US](https://creativecommons.org/licenses/by/3.0/us/)): http://rcptones.com/dev_tones/#tabr1
 
 Arrows graphic by <a href="http://www.flaticon.com/authors/elegant-themes">elegant_themes</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Check out the new logo that I created on <a href="http://logomakr.com" title="Logo Maker">LogoMaker.com</a> https://logomakr.com/3cTBYE3cTBYE
