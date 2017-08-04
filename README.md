@@ -1,6 +1,6 @@
 # Letter Run
 
-[Live link](virginiac32.github.io/letter-run)
+[Live link](https://virginiac32.github.io/letter-run)
 
 ## Background
 
