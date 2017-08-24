@@ -17,7 +17,7 @@ p {
 }
 
 form {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 input {
@@ -72,7 +72,7 @@ button:hover {
 #score {
   text-align: center;
   margin: auto;
-  font-size: 35px;
+  font-size: 40px;
   color: black;
   /*width: 100px;
   height: 100px;*/
@@ -110,6 +110,10 @@ a {
   padding: 10px;
 }
 
+.word-game {
+  padding-top: 50px;
+}
+
 #game-over {
   position: absolute;
   font-size: 90px;
@@ -138,6 +142,7 @@ a {
   text-align: center;
   background-color: white;
   color: #2486B2;
+  top: 20px;
 }
 
 #replay {
