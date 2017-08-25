@@ -154,12 +154,20 @@ a {
   color: #2486B2;
 }
 
+#cover {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  align-self: center;
+}
+
 #replay {
   position: absolute;
   margin: auto;
   text-align: center;
   left: 130px;
-  bottom: 30px;
+  bottom: 90px;
   width: 300px;
   height: 70px;
 }
