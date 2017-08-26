@@ -8,7 +8,7 @@ Letter Run is a one-player anagram word game that is inspired by scrabble and ot
 
 ### Gameplay
 
-![gameplay](./assets/docs/Letter-Run.gif)
+![gameplay](./assets/docs/letter-run-play.gif)
 
 Letter Run starts with a group of letter tiles moving towards the left of the screen. As letters move left, new letters move in from the right. Type out words (with a minimum of 3 characters) that can be formed from the letters on the screen to clear those letters!
 
