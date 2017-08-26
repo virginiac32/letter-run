@@ -20,6 +20,7 @@ Letter Run was built using:
 * JavaScript for the overall structure and game logic
 * `jQuery` for DOM manipulation
 * `webpack` to bundle the various scripts
+* HTML5 and CSS3 for the user interface
 
 ## Features
 
