@@ -5,10 +5,11 @@
       <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="./stylesheets/base/tiles.css">
       <link rel="stylesheet" type="text/css" href="./stylesheets/base/game.css">
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
       <link rel="shortcut icon" type="image/x-icon" href="./assets/docs/LetterRun.ico" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script type="application/javascript" src="./lib/bundle.js"></script>
+      <script type="text/javascript" src="./lib/mute.js"></script>
 
       <!-- Google analytics -->
       <script>
@@ -26,6 +27,10 @@
 
   <body>
 
+    <audio id="gamePlay">
+      <source src="./assets/audio/michorvath__sequence-8-bit-music-loop.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
     <audio id="goodWord">
       <source src="./assets/audio/pop_drip.wav" type="audio/wav">
       Your browser does not support the audio element.
@@ -42,13 +47,16 @@
     <div class="all-body">
       <div class="header-info">
         <img class="logo" src="./assets/docs/LetterRunLogo.png" alt="Logo" />
-        <div id="score" data-score="0">SCORE: </div>
+        <div class="center">
+          <div id="score" data-score="0">SCORE: </div>
+          <i id="mute" class="fas fa-volume-mute fa-2x" aria-hidden="true" onclick="mute()"></i>
+        </div>
         <div class="links">
           <a href="https://github.com/virginiac32/letter-run" target="_blank">
-          <i id="github" class="fa fa-github fa-3x" aria-hidden="true"></i>
+          <i id="github" class="fab fa-github fa-3x" aria-hidden="true"></i>
           </a>
           <a href="https://www.linkedin.com/in/virginia-chen/" target="_blank">
-          <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+          <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
           </a>
         </div>
       </div>

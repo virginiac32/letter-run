@@ -67,6 +67,11 @@ button:hover {
   width: 100%;
 }
 
+.center {
+  display: flex;
+  align-items: center;
+}
+
 #score:after {
   content: attr(data-score);
   font-weight: bold;
@@ -78,7 +83,13 @@ button:hover {
   font-size: 40px;
   color: black;
   flex: 5;
+  min-width: 200px;
   align-self: center;
+}
+
+#mute {
+  width: 30px;
+  padding-left: 20px;
 }
 
 .header-info {
@@ -96,12 +107,10 @@ button:hover {
 .logo {
   height: 90px;
   width: auto;
-  flex: 1;
   padding-left: 30px;
 }
 
 .links {
-  flex: 1;
   display: flex;
   justify-content: flex-end;
   padding-right: 30px;
